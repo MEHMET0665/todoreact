@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "..\\..\\work-shop\\21.day\\React Projcts\\01-React_JSX - Project"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "01-React_JSX - Project"
+  }
+}
