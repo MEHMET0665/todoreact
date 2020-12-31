@@ -15,13 +15,20 @@ class TodoList extends React.Component{
         id:12336512
       }
       ],
+      newTask:''
     }
+    this.handleInput=this.handleInput.bind(this)
+  }
+  handleInput(e){
+  this.setState({
+    newTask:e.target.value
+  })
   }
   render(){
     return (
       <div>
-           <form>
-     <input type="text"/>
+     <form> 
+     <input type="text" onInput={this.handleInput}/>
      <button type='button'>Add</button>
      </form>
      <ul>
