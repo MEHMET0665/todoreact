@@ -1,0 +1,11 @@
+.parent {
+  text-align: center;
+  background-color: brown;
+  color: black;
+}
+.child {
+  color: blue;
+}
+.title {
+  color: cornflowerblue;
+}
