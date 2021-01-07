@@ -27,15 +27,25 @@ class TodoList extends React.Component{
   }
   handleClick(e){
     if(this.state.newTask.trim()){
+      //create a new tasks onject
       let newItem= {title:this.state.newTask,
       completed:false,
       id:Date.now()
     }
-    this.setState(prevState=>{
-      return {
-        tasks:prevState.tasks.concat(newItem)
-      }
-    })
+    //concatenate new task object to the previous task
+    // this.setState(prevState=>{
+    //   return {
+    //     tasks:prevState.tasks.concat(newItem)
+    //   }
+    // })
+//another concatenating method
+const newTasks=[...this.state.tasks,newItem]
+this.setState({
+  tasks:newTasks
+})
+console.log(...this.state.tasks)
+
+    // emty the newTasks property in state
     this.state.newTask="";
     }
     else{
